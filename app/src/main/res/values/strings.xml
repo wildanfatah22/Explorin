@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Explorin</string>
+    <string name="masuk">Masuk</string>
+    <string name="rencanakan_liburan">Rencanakan Liburan Anda dengan Satu Sentuhan</string>
+    <string name="email">Email</string>
+    <string name="password">Kata sandi</string>
+    <string name="lupa_password"><u>Lupa password?</u></string>
+    <string name="atau">Atau</string>
+    <string name="login_google">Login with Google</string>
 </resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Font Section -->
+    <style name="bold32">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="bold24">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="bold14">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="medium20">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="medium16">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="light14">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="regular14">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <!-- Text Edit Section -->
+    <style name="TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusTopStart">20dp</item>
+        <item name="boxStrokeColor">@color/gray</item>
+        <item name="hintEnabled">false</item>
+        <item name="boxStrokeErrorColor">@color/red</item>
+    </style>
+
+    <style name="TextEdit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!-- Text Edit Section -->
+    <style name="ButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="backgroundTint">@color/black</item>
+    </style>
+
+</resources>

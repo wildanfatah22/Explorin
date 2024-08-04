@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".presentation.ui.LoginActivity">
+
+    <TextView
+        android:id="@+id/tvMasuk"
+        style="@style/bold32"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/masuk"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHolidayPlan"
+        style="@style/medium20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/rencanakan_liburan"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/parentConstrain"
+        app:layout_constraintTop_toBottomOf="@id/tvMasuk"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parentConstrain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/bg_white_24rad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHolidayPlan">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_email"
+            style="@style/TextInput"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="42dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_email_input"
+                style="@style/TextEdit"
+                android:drawableStart="@drawable/ic_email"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_sandi"
+            style="@style/TextInput"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_sandi_input"
+                style="@style/TextEdit"
+                android:drawableStart="@drawable/ic_password"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvLupaPassword"
+            style="@style/regular14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/lupa_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_sandi" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            style="@style/ButtonStyle"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/masuk"
+            app:icon="@drawable/ic_next"
+            app:iconGravity="end"
+            app:iconSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLupaPassword" />
+
+        <TextView
+            android:id="@+id/tvAtau"
+            style="@style/regular14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/atau"
+            android:textAllCaps="true"
+            android:textColor="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
