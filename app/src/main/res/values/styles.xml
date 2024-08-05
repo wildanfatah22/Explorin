@@ -70,11 +70,25 @@
     <style name="ButtonStyle" parent="Widget.Material3.Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">70dp</item>
-        <item name="android:textSize">16dp</item>
+        <item name="android:textSize">16sp</item>
         <item name="fontFamily">@font/poppins_medium</item>
         <item name="android:textColor">@color/white</item>
         <item name="cornerRadius">12dp</item>
         <item name="backgroundTint">@color/black</item>
+        <item name="iconTint">@null</item>
+    </style>
+
+
+    <style name="GoogleBtn" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="backgroundTint">@color/black</item>
+        <item name="iconTint">@null</item>
     </style>
 
 </resources>

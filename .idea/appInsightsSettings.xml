@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.capstone.explorin" />
+                  <option name="mobileSdkAppId" value="1:580726455448:android:fe897a625b0dff82e1a4ed" />
+                  <option name="projectId" value="myproject-32f77" />
+                  <option name="projectNumber" value="580726455448" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

@@ -7,4 +7,8 @@
     <string name="lupa_password"><u>Lupa password?</u></string>
     <string name="atau">Atau</string>
     <string name="login_google">Login with Google</string>
+    <string name="havent_account">Belum punya akun?</string>
+    <string name="register">Daftar</string>
+    <string name="masuk_google">Masuk dengan Google</string>
+    <string name="your_web_client_id">580726455448-0q3b48rm0qhni9jt6o4rldaut3ruohb7.apps.googleusercontent.com</string>
 </resources>
