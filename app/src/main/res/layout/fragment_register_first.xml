@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".presentation.ui.RegisterFirstFragment">
+
+    <TextView
+        android:id="@+id/tvRegister"
+        style="@style/bold32"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/register"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPage"
+        style="@style/medium16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="@id/tvRegister"
+        app:layout_constraintTop_toBottomOf="@id/tvRegister"
+        android:text="@string/_1_dari_3" />
+
+    <TextView
+        android:id="@+id/tvRegisterText"
+        style="@style/medium20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/isikan_dengan_nama_depan_serta_nama_belakang_kamu_ya"
+        app:layout_constraintBottom_toTopOf="@id/edtFirstName"
+        app:layout_constraintTop_toBottomOf="@id/tvRegister"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtFirstName"
+        style="@style/TextInput"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRegisterText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtFirstNameInput"
+            style="@style/TextEdit"
+            android:drawableStart="@drawable/ic_email"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtLastName"
+        style="@style/TextInput"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtFirstName"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtLastNameInput"
+            style="@style/TextEdit"
+            android:drawableStart="@drawable/ic_sandi"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegister"
+        style="@style/ButtonStyle"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/register"
+        app:icon="@drawable/ic_next"
+        app:iconGravity="end"
+        app:iconSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvOr"/>
+
+    <TextView
+        android:id="@+id/tvOr"
+        style="@style/regular14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/atau"
+        android:textAllCaps="true"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnGoogle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGoogle"
+        style="@style/GoogleBtn"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="32dp"
+        android:elevation="5dp"
+        android:text="@string/masuk_google"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:icon="@drawable/ic_google"
+        app:iconGravity="start"
+        app:iconSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/toRegister" />
+
+    <TextView
+        android:id="@+id/haveAccount"
+        style="@style/medium16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="@string/havent_account"
+        app:layout_constraintBottom_toBottomOf="@id/toRegister"
+        app:layout_constraintEnd_toStartOf="@id/toRegister"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/toRegister" />
+
+    <TextView
+        android:id="@+id/toRegister"
+        style="@style/medium16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/register"
+        android:textColor="@color/lavender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/haveAccount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

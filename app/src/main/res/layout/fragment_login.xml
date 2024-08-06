@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".presentation.ui.LoginActivity">
+    tools:context=".presentation.ui.LoginFragment"
+    >
 
     <TextView
-        android:id="@+id/tvMasuk"
+        android:id="@+id/tvLogin"
         style="@style/bold32"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,12 +24,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:text="@string/rencanakan_liburan"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@id/parentConstrain"
-        app:layout_constraintTop_toBottomOf="@id/tvMasuk"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintTop_toBottomOf="@id/tvLogin"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/parentConstrain"
@@ -40,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@id/tvHolidayPlan">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edt_email"
+            android:id="@+id/edtEmail"
             style="@style/TextInput"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="42dp"
@@ -48,7 +49,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_email_input"
+                android:id="@+id/edtEmailInput"
                 style="@style/TextEdit"
                 android:drawableStart="@drawable/ic_email"
                 android:hint="@string/email"
@@ -56,17 +57,17 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edt_sandi"
+            android:id="@+id/edtSandi"
             style="@style/TextInput"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="20dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edt_email"
+            app:layout_constraintTop_toBottomOf="@id/edtEmail"
             app:passwordToggleEnabled="true"
             app:passwordToggleTint="@color/gray">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_sandi_input"
+                android:id="@+id/edtSandiInput"
                 style="@style/TextEdit"
                 android:drawableStart="@drawable/ic_sandi"
                 android:hint="@string/password"
@@ -75,7 +76,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
-            android:id="@+id/tvLupaPassword"
+            android:id="@+id/tvForgetPassword"
             style="@style/regular14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -83,7 +84,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/lupa_password"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edt_sandi" />
+            app:layout_constraintTop_toBottomOf="@id/edtSandi" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
@@ -95,10 +96,10 @@
             app:iconGravity="end"
             app:iconSize="30dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvLupaPassword" />
+            app:layout_constraintTop_toBottomOf="@id/tvForgetPassword" />
 
         <TextView
-            android:id="@+id/tvAtau"
+            android:id="@+id/tvOr"
             style="@style/regular14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -123,10 +124,10 @@
             app:iconGravity="start"
             app:iconSize="30dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvAtau" />
+            app:layout_constraintTop_toBottomOf="@id/tvOr" />
 
         <TextView
-            android:id="@+id/have_acc"
+            android:id="@+id/haveAccount"
             style="@style/medium16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -148,7 +149,7 @@
             android:textColor="@color/lavender"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/have_acc"
+            app:layout_constraintStart_toEndOf="@id/haveAccount"
             app:layout_constraintTop_toBottomOf="@id/btnGoogle" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

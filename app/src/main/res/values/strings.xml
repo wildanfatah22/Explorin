@@ -11,4 +11,8 @@
     <string name="register">Daftar</string>
     <string name="masuk_google">Masuk dengan Google</string>
     <string name="your_web_client_id">580726455448-0q3b48rm0qhni9jt6o4rldaut3ruohb7.apps.googleusercontent.com</string>
+    <string name="isikan_dengan_nama_depan_serta_nama_belakang_kamu_ya">Isikan dengan nama depan serta nama belakang kamu ya!</string>
+    <string name="_1_dari_3">1 dari 3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
