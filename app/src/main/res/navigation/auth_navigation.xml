@@ -7,11 +7,15 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.capstone.explorin.presentation.ui.LoginFragment"
+        android:name="com.capstone.explorin.presentation.ui.login.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFirstFragment"
+            app:destination="@id/registerFirstFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/registerFirstFragment2"
+        android:id="@+id/registerFirstFragment"
         android:name="com.capstone.explorin.presentation.ui.register.RegisterFirstFragment"
         android:label="fragment_register_first"
         tools:layout="@layout/fragment_register_first" />

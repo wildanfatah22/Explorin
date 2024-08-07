@@ -1,4 +1,4 @@
-package com.capstone.explorin.presentation.ui
+package com.capstone.explorin.presentation.ui.login
 
 import android.content.Intent
 import android.os.Bundle
@@ -13,6 +13,9 @@ import androidx.credentials.GetCredentialRequest
 import androidx.credentials.GetCredentialResponse
 import androidx.credentials.exceptions.GetCredentialException
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.capstone.explorin.MainActivity
 import com.capstone.explorin.R
 import com.capstone.explorin.databinding.FragmentLoginBinding
@@ -58,7 +61,7 @@ class LoginFragment : Fragment() {
     }
 
     private fun goToRegister() {
-
+        findNavController().navigate(R.id.action_loginFragment_to_registerFirstFragment)
     }
 
     private fun googleSignIn() {

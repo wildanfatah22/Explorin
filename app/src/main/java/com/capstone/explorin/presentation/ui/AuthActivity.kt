@@ -2,8 +2,10 @@ package com.capstone.explorin.presentation.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.findNavController
 import com.capstone.explorin.R
 import com.capstone.explorin.databinding.ActivityAuthBinding
+import com.capstone.explorin.presentation.ui.login.LoginFragment
 
 class AuthActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAuthBinding
@@ -12,20 +14,5 @@ class AuthActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAuthBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        setFragmentManager()
-    }
-
-    private fun setFragmentManager() {
-        val fragmentManager = supportFragmentManager
-        val loginFragment = LoginFragment()
-        val fragment = fragmentManager.findFragmentByTag(loginFragment::class.java.simpleName)
-
-        if (fragment == null) {
-            fragmentManager
-                .beginTransaction()
-                .replace(R.id.frame_container, loginFragment, LoginFragment::class.java.simpleName)
-                .commit()
-        }
     }
 }
