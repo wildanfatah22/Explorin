@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_login" />
     <fragment
         android:id="@+id/registerFirstFragment2"
-        android:name="com.capstone.explorin.presentation.ui.RegisterFirstFragment"
+        android:name="com.capstone.explorin.presentation.ui.register.RegisterFirstFragment"
         android:label="fragment_register_first"
         tools:layout="@layout/fragment_register_first" />
 </navigation>

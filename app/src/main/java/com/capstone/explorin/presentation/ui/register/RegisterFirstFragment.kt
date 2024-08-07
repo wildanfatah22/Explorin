@@ -1,4 +1,4 @@
-package com.capstone.explorin.presentation.ui
+package com.capstone.explorin.presentation.ui.register
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
