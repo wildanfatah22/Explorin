@@ -45,7 +45,7 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="80dp"
         android:text="@string/tulis_kata_sandi_milikmu_jangan_sampai_orang_lain_tau_ya"
-        app:layout_constraintBottom_toTopOf="@id/edtFirstName"
+        app:layout_constraintBottom_toTopOf="@id/edtSandi"
         app:layout_constraintTop_toBottomOf="@id/tvRegister"
         app:layout_constraintVertical_chainStyle="spread" />
 
@@ -78,7 +78,7 @@
         app:passwordToggleTint="@color/gray">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtLastNameInput"
+            android:id="@+id/edtSandiConfirmationInput"
             style="@style/TextEdit"
             android:drawableStart="@drawable/ic_sandi"
             android:hint="@string/konfirmasi_kata_sandi"

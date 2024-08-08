@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,139 +7,145 @@
     android:background="@color/white"
     tools:context=".presentation.ui.register.RegisterFirstFragment">
 
-    <TextView
-        android:id="@+id/tvRegister"
-        style="@style/bold32"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/register"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/tvPage"
-        style="@style/medium16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/gray"
-        app:layout_constraintStart_toStartOf="@id/tvRegister"
-        app:layout_constraintTop_toBottomOf="@id/tvRegister"
-        android:text="@string/_1_dari_3" />
+        <TextView
+            android:id="@+id/tvRegister"
+            style="@style/bold32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/register"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvRegisterText"
-        style="@style/medium20"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="80dp"
-        android:text="@string/isikan_dengan_nama_depan_serta_nama_belakang_kamu_ya"
-        app:layout_constraintBottom_toTopOf="@id/edtFirstName"
-        app:layout_constraintTop_toBottomOf="@id/tvRegister"
-        app:layout_constraintVertical_chainStyle="spread" />
+        <TextView
+            android:id="@+id/tvPage"
+            style="@style/medium16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_dari_3"
+            android:textColor="@color/gray"
+            app:layout_constraintStart_toStartOf="@id/tvRegister"
+            app:layout_constraintTop_toBottomOf="@id/tvRegister" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edtFirstName"
-        style="@style/TextInput"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="42dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvRegisterText">
+        <TextView
+            android:id="@+id/tvRegisterText"
+            style="@style/medium20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/isikan_dengan_nama_depan_serta_nama_belakang_kamu_ya"
+            app:layout_constraintBottom_toTopOf="@id/edtFirstName"
+            app:layout_constraintTop_toBottomOf="@id/tvRegister"
+            app:layout_constraintVertical_chainStyle="spread" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtFirstNameInput"
-            style="@style/TextEdit"
-            android:hint="@string/first_name"
-            android:inputType="textPersonName" />
-    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtFirstName"
+            style="@style/TextInput"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="42dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvRegisterText">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edtLastName"
-        style="@style/TextInput"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtFirstName"
-        app:layout_constraintBottom_toTopOf="@id/btnRegister"
-        app:layout_constraintVertical_chainStyle="spread_inside"
-        app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@color/gray">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtFirstNameInput"
+                style="@style/TextEdit"
+                android:hint="@string/first_name"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtLastNameInput"
-            style="@style/TextEdit"
-            android:hint="@string/last_name"
-            android:inputType="textPersonName" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtLastName"
+            style="@style/TextInput"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@id/btnRegister"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtFirstName"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/gray">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtLastNameInput"
+                style="@style/TextEdit"
+                android:hint="@string/last_name"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnRegister"
-        style="@style/ButtonStyle"
-        android:layout_marginHorizontal="60dp"
-        android:layout_marginBottom="24dp"
-        android:text="@string/next"
-        app:icon="@drawable/ic_next"
-        app:iconGravity="end"
-        app:iconSize="30dp"
-        app:layout_constraintTop_toBottomOf="@id/edtLastName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tvOr"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegister"
+            style="@style/ButtonStyle"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/next"
+            app:icon="@drawable/ic_next"
+            app:iconGravity="end"
+            app:iconSize="30dp"
+            app:layout_constraintBottom_toTopOf="@id/tvOr"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtLastName" />
 
-    <TextView
-        android:id="@+id/tvOr"
-        style="@style/regular14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:text="@string/atau"
-        android:textAllCaps="true"
-        android:textColor="@color/gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btnGoogle" />
+        <TextView
+            android:id="@+id/tvOr"
+            style="@style/regular14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:text="@string/atau"
+            android:textAllCaps="true"
+            android:textColor="@color/gray"
+            app:layout_constraintBottom_toTopOf="@id/btnGoogle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnRegister" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnGoogle"
-        style="@style/GoogleBtn"
-        android:layout_marginHorizontal="60dp"
-        android:layout_marginBottom="32dp"
-        android:elevation="5dp"
-        android:text="@string/masuk_google"
-        android:textColor="@color/black"
-        app:backgroundTint="@color/white"
-        app:icon="@drawable/ic_google"
-        app:iconGravity="start"
-        app:iconSize="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/toLogin" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGoogle"
+            style="@style/GoogleBtn"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginBottom="32dp"
+            android:elevation="5dp"
+            android:text="@string/masuk_google"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/white"
+            app:icon="@drawable/ic_google"
+            app:iconGravity="start"
+            app:iconSize="30dp"
+            app:layout_constraintBottom_toTopOf="@id/toLogin"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/haveAccount"
-        style="@style/medium16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
-        android:text="@string/have_acc"
-        app:layout_constraintBottom_toBottomOf="@id/toLogin"
-        app:layout_constraintEnd_toStartOf="@id/toLogin"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/toLogin" />
+        <TextView
+            android:id="@+id/haveAccount"
+            style="@style/medium16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="@string/have_acc"
+            app:layout_constraintBottom_toBottomOf="@id/toLogin"
+            app:layout_constraintEnd_toStartOf="@id/toLogin"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/toLogin" />
 
-    <TextView
-        android:id="@+id/toLogin"
-        style="@style/medium16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="@string/masuk"
-        android:textColor="@color/lavender"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/haveAccount" />
+        <TextView
+            android:id="@+id/toLogin"
+            style="@style/medium16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="@string/masuk"
+            android:textColor="@color/lavender"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/haveAccount" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

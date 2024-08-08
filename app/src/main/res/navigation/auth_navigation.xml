@@ -18,5 +18,23 @@
         android:id="@+id/registerFirstFragment"
         android:name="com.capstone.explorin.presentation.ui.register.RegisterFirstFragment"
         android:label="fragment_register_first"
-        tools:layout="@layout/fragment_register_first" />
+        tools:layout="@layout/fragment_register_first" >
+        <action
+            android:id="@+id/action_registerFirstFragment_to_registerSecondFragment"
+            app:destination="@id/registerSecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerSecondFragment"
+        android:name="com.capstone.explorin.presentation.ui.register.RegisterSecondFragment"
+        android:label="fragment_register_second"
+        tools:layout="@layout/fragment_register_second" >
+        <action
+            android:id="@+id/action_registerSecondFragment_to_registerThirdFragment"
+            app:destination="@id/registerThirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerThirdFragment"
+        android:name="com.capstone.explorin.presentation.ui.register.RegisterThirdFragment"
+        android:label="fragment_register_third"
+        tools:layout="@layout/fragment_register_third" />
 </navigation>

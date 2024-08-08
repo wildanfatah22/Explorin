@@ -13,8 +13,6 @@ import androidx.credentials.GetCredentialRequest
 import androidx.credentials.GetCredentialResponse
 import androidx.credentials.exceptions.GetCredentialException
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.capstone.explorin.MainActivity
 import com.capstone.explorin.R
@@ -47,10 +45,10 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         auth = FirebaseAuth.getInstance()
-        bindingListener()
+        buttonListener()
     }
 
-    private fun bindingListener() {
+    private fun buttonListener() {
         binding.btnGoogle.setOnClickListener {
             googleSignIn()
         }

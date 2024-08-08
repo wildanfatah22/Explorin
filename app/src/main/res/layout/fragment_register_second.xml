@@ -46,12 +46,12 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="80dp"
         android:text="@string/isikan_emailmu_dengan_benar_jangan_sampai_salah"
-        app:layout_constraintBottom_toTopOf="@id/edtFirstName"
+        app:layout_constraintBottom_toTopOf="@id/edtEmail"
         app:layout_constraintTop_toBottomOf="@id/tvRegister"
         app:layout_constraintVertical_chainStyle="spread" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edtFirstName"
+        android:id="@+id/edtEmail"
         style="@style/TextInput"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="42dp"
@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@id/tvRegisterText">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtFirstNameInput"
+            android:id="@+id/edtEmailInput"
             style="@style/TextEdit"
             android:drawableStart="@drawable/ic_email"
             android:hint="@string/email"
